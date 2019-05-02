@@ -24,9 +24,80 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-app
 .nopadding { @include nopadding(); }
 .hidden { display: none!important; }
 html, body {
-	width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden; font-family: $def-font-stack; font-size: 10px;
-	-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: white;
+	width: 100%; height: 100%; margin: 0px; padding: 0px; font-family: $def-font-stack; font-size: 10px;
+	-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: white; overflow: hidden;
 }
 div#root {
-    width: 100%; height: 100%; background: $default-back;
+    width: 100%; background: $default-back;
+	section {
+		padding: 25px 50px;
+		&#sect-home {
+			background: url('../../public/image/back.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+
+			#header {
+				width: 100%; border-bottom: 1px solid white; height: ($menu-height + 2);
+				div {
+					float: right; line-height: $menu-height; width: 100px; margin: 0px 15px;
+					font-size: 14px; text-transform: uppercase; font-weight: 700; text-align: center;
+
+					&.active { border-bottom: 5px solid $orange; }
+				}
+			}
+
+			#capt {
+				width: 1000px; text-align: center; margin: 20vh auto;
+
+				#ceil { font-size: 40px; font-weight: 700; margin-bottom: 5px; i { margin-right: 5px; } }
+				#floor { padding: 0px 225px; font-size: 15px; }
+			}
+
+			#button-wrapper {
+				display: flex;
+				#exp-button {
+					margin-top: 20vh; width: 150px; margin: auto; padding: 7.5px 0px;
+					background: $orange; color: white; border-radius: 20px;
+					text-align: center; text-transform: uppercase; font-size: 15px; font-weight: 700; letter-spacing: 1.25px;
+				}
+			}
+
+			#img-wrapper { width: 100px; margin: 25px auto 0px; }
+		}
+
+		.scribble {
+			width: calc(100% - #{$sidebar-width});
+			.main { text-align: center; width: 100%; font-size: 30px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 15px; }
+			.title { font-size: 20px; text-transform: capitalize; font-weight: 700; }
+			.content {
+				font-size: 13px; text-align: justify; margin-bottom: 20px;
+				ul { list-style-type: decimal; padding-left: 30px; }
+				i.color { color: $orange; }
+			}
+			.button-wrapper {
+				display: flex;
+				.button {
+					width: 150px; margin: auto; padding: 10px 25px;
+					background: $orange; color: white; border-radius: 20px;
+					text-align: center; text-transform: none; font-size: 13px; font-weight: 400; letter-spacing: 1.25px;
+				}
+			}
+		}
+	}
+	div#sidebar {
+		position: fixed; right: 0px; top: 0px;
+		width: $sidebar-width; height: 100vh; background: white;
+		&.hide { right: -$sidebar-width; }
+		transition: all 1s;
+		#logo {
+			padding: 25px 50px;
+			#bappenas { width: 35%; float: left; }
+			#plj { padding-top: 12.5px; width: 50%; float: right; span { color: black; font-size: 8px; } }
+		}
+		ul#nav {
+			margin-top: 15vh;
+			li {
+				color: $orange; font-size: 15px; font-weight: 700; text-align: center; text-transform: uppercase; padding: 20px 0px; margin-bottom: 10px; padding-left: 8px;
+				&.active { border-left: 8px solid $orange; padding-left: 0px; }
+			}
+		}
+	}
 }
