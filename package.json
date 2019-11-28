@@ -16,6 +16,8 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/pulselabjakarta/landing-page#readme",
   "dependencies": {
-    "jquery-scrollify": "^1.0.20"
+    "jquery-scrollify": "^1.0.20",
+    "light-server": "^2.6.4",
+    "live-server": "^1.2.1"
   }
 }
