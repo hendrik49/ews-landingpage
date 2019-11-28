@@ -139,6 +139,14 @@ div#root section {
     padding: 25px 50px
 }
 
+div#root section#land-home {
+    background: url("../../public/image/back.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
 div#root section#sect-home {
     background: url("../../public/image/background2.png") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -181,11 +189,18 @@ div#root section#sect-home #capt {
 
 div#root section#sect-home #capt #ceil {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 550;
     margin-bottom: 5px
 }
 
-div#root section#sect-home #capt #ceilfront {
+div#root section#land-home #capt {
+    width: 1000px;
+    text-align: center;
+    margin: 20vh auto
+}
+
+
+div#root section#land-home #capt #ceilfront {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 5px
