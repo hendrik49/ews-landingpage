@@ -369,7 +369,7 @@ div#root div#sidebar ul#nav li.active {
 
 .home-title{
     font-weight: 600;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 @media screen and (min-width: 600px) {
