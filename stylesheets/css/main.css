@@ -140,19 +140,23 @@ div#root section {
 }
 
 div#root section#land-home {
-    background: url("../../public/image/back.png") no-repeat center center fixed;
+    background: url("../../public/image/back.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 div#root section#sect-home {
-    background: url("../../public/image/background2.png") no-repeat center center fixed;
+    background: url("../../public/image/background2.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 div#root section#sect-option {
@@ -198,15 +202,6 @@ div#root section#land-home #capt {
     text-align: center;
     margin: 20vh auto
 }
-
-
-div#root section#land-home #capt #ceilfront {
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 5px
-}
-
-
 
 div#root section#sect-home #capt #ceil i {
     margin-right: 5px
@@ -354,22 +349,9 @@ div#root div#sidebar ul#nav li.active {
     padding: 150px 200px;
 }
 
-#img-wrapper-db{
-    width: 150px;
-    float: left;
-    text-align: center;
-}
-
-#img-wrapper-inf{
-    width: 150px;
-    float: right;
-    text-align: center;
-}
-
 .land-desc{
     margin-top: 10px;
     font-size: 13px;
-    width: 200px;
     text-align: center;
 }
 
@@ -383,4 +365,23 @@ div#root div#sidebar ul#nav li.active {
     text-align: center;
     font-size: 12px;
 }
+
+.home-title{
+    font-weight: 600;
+    margin-top: 250px;
+}
+
+@media screen and (min-width: 600px) {
+    h1.home-title {
+      font-size: 60px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    h1.home-title  {
+      font-size: 25px;
+    }
+  }
+  
 /*# sourceMappingURL=main.css.map */
