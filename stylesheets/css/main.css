@@ -136,7 +136,7 @@ div#root {
 }
 
 div#root section {
-    padding: 25px 50px
+    padding: 25px 25px
 }
 
 div#root section#land-home {
@@ -186,7 +186,6 @@ div#root section#sect-home #header div.active {
 }
 
 div#root section#sect-home #capt {
-    width: 1000px;
     text-align: center;
     margin: 20vh auto
 }
@@ -208,7 +207,7 @@ div#root section#sect-home #capt #ceil i {
 }
 
 div#root section#sect-home #capt #floor {
-    padding: 0px 225px;
+    padding: 0px 90px;
     font-size: 15px
 }
 
