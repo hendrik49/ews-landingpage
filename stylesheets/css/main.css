@@ -353,6 +353,7 @@ div#root div#sidebar ul#nav li.active {
     margin-top: 10px;
     font-size: 13px;
     text-align: center;
+    padding: 0px 20px;
 }
 
 .land-title {
