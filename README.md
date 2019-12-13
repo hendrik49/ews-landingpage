@@ -11,7 +11,7 @@ How to deploy The Early Warning System Inlfation
    cloning project ews-landingpage. 
    git clone https://github.com/hendrik49/ews-landingpage
 4. cd to directory ews-landing page
-   execute pm2 start npm --name=inflation -- start
+   execute pm2 start npm --name=landingpage -- start
 5. Check the web is running
    pm2 status
 6. Access the web on http://IP:3000
