@@ -1,6 +1,6 @@
 # ews-landingpage
 
-How to deploy The Early Warning System Inlfation
+How to deploy The Early Warning System Landingpage
 
 
 1. Installing NodeJS
